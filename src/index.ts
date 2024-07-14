@@ -6,7 +6,7 @@ export interface Options {
 }
 
 const report: TextlintRuleModule<Options> = (context, options = {}) => {
-    const { Syntax, RuleError, report, locator } = context;
+    const { Syntax, RuleError, report } = context;
     const minimumLevel = options.min_header_level ?? 1;
     const maximumLevel = options.max_header_level ?? 6;
     return {
@@ -15,9 +15,6 @@ const report: TextlintRuleModule<Options> = (context, options = {}) => {
                 const error = node.depth < minimumLevel ? "minimum" : "maximum";
                 const ruleError = new RuleError(
                     `Found header level ${node.depth} while the ${error} allowed level is ${minimumLevel}.`,
-                    {
-                        padding: locator.loc(node.loc),
-                    }
                 );
                 report(node, ruleError);
             }
