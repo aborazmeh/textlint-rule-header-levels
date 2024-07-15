@@ -1,4 +1,4 @@
-# textlint-rule-header-levels
+# textlint-rule-header-levels [![Actions Status: test](https://github.com/aborazmeh/textlint-rule-header-levels/workflows/test/badge.svg)](https://github.com/aborazmeh/textlint-rule-header-levels/actions?query=workflow%3A"test") [![textlint rule](https://img.shields.io/badge/textlint-fixable-green.svg?style=social)](https://textlint.github.io/)
 
 Specify the least and most allowed header levels
 
