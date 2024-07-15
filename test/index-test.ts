@@ -36,7 +36,6 @@ content
             errors: [
                 {
                     message: "Found header level 1 while the minimum allowed level is 2.",
-                    loc: { start: { line: 4, column: 1 }, end: { line: 4, column: 8 } },
                 },
             ],
         },
